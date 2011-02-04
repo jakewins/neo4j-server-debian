@@ -1,0 +1,14 @@
+Source: neo4j
+Section: devel
+Priority: extra
+Maintainer: Jacob Hansson <jacob@voltvoodoo.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+Homepage: http://neo4j.org/
+
+Package: neo4j
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, daemon, adduser, psmisc, default-jre
+Conflicts: neo4j
+Replaces: neo4j
+Description: A database server that stores data as graphs rather than tables.
