@@ -5,7 +5,7 @@ To build this, you need a debian (or ubuntu) computer, and need debuild installe
 
   sudo apt-get install devscripts
 
-You also need to locally install the server-standalone project with the following added to your pom:
+You also need to locally install (mvn install) the server-standalone project with the following plugin added to <plugins> in its pom.xml:
 
    <plugin>
      <groupId>org.codehaus.mojo</groupId>
