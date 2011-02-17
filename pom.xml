@@ -34,7 +34,7 @@
 		<neo4j.standalone.dir>${project.build.outputDirectory}/neo4j-${neo4j.standalone.version}</neo4j.standalone.dir>
 		<short-name>server-debian</short-name>
 		<neo4j.debian.version>${neo4j.standalone.version}</neo4j.debian.version>
-		<neo4j.debian.maintainer>Jacob Hansson &lt;jacob@voltvoodoo.com&gt;</neo4j.debian.maintainer>
+		<neo4j.debian.maintainer>Anders Nawroth &lt;anders@neotechnology.com&gt;</neo4j.debian.maintainer>
 		
 		<!-- Change to "stable" when doing a stable release -->
 		<neo4j.debian.stability>unstable</neo4j.debian.stability>
