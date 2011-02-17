@@ -5,39 +5,9 @@ To build this, you need a debian (or ubuntu) computer, and need debuild installe
 
   sudo apt-get install devscripts
 
-You also need to locally install (mvn install) the server-standalone project with the following plugin added to <plugins> in its pom.xml:
-
-   <plugin>
-     <groupId>org.codehaus.mojo</groupId>
-     <artifactId>build-helper-maven-plugin</artifactId>
-     <version>1.3</version>
-     <executions>
-       <execution>
-         <id>attach-distribution</id>
-         <phase>package</phase>
-         <goals>
-           <goal>attach-artifact</goal>
-         </goals>
-         <configuration>
-           <artifacts>
-             <artifact>
-               <file>target/${server.shortname}-${pom.version}-unix.tar.gz</file>
-               <type>tar.gz</type>
-               <classifier>unix</classifier>
-             </artifact>
-             <artifact>
-               <file>target/${server.shortname}-${pom.version}-windows.zip</file>
-               <type>zip</type>
-               <classifier>windows</classifier>
-             </artifact>
-           </artifacts>
-         </configuration>
-       </execution>
-     </executions>
-   </plugin>
-   
 Then just do:
 
-mvn clean package
+  mvn clean package
 
 And you will have a .deb file in "target/"!
+
